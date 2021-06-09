@@ -11,5 +11,13 @@
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GermanStevssel/patitas-solidarias.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GermanStevssel/patitas-solidarias/issues"
+  },
+  "homepage": "https://github.com/GermanStevssel/patitas-solidarias#readme",
   "description": ""
 }
