@@ -92,6 +92,36 @@ address a:hover {
     /* tamaño de fuente de los enlaces de los items */
   }
 }
+/* Utilities */
+/* posicionamiento de boton de subir */
+.up {
+  position: fixed;
+  /* posiciono boton en el viewport - elemento flotante */
+  bottom: 5rem;
+  /* lo posiciono abajo */
+  right: 1.5rem;
+  /* y a la derecha*/
+  z-index: 200;
+  /* le doy un valor de 200 para que quede por encima de todo*/
+}
+.up:hover {
+  animation: inflate 1s ease-in;
+  /* animación al hacer hover sobre boton de subir */
+}
+
+@keyframes inflate {
+  0% {
+    transform: scale(1);
+    /* tamaño en escala 1:1*/
+  }
+  50% {
+    transform: scale(1.15);
+    /* tamaño en escala 1.15:1 */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* Components */
 .adoption {
   background-color: #042B58;
@@ -548,36 +578,6 @@ footer {
   }
 }
 
-/* Utilities */
-/* posicionamiento de boton de subir */
-.up {
-  position: fixed;
-  /* posiciono boton en el viewport - elemento flotante */
-  bottom: 5rem;
-  /* lo posiciono abajo */
-  right: 1.5rem;
-  /* y a la derecha*/
-  z-index: 200;
-  /* le doy un valor de 200 para que quede por encima de todo*/
-}
-.up:hover {
-  animation: inflate 1s ease-in;
-  /* animación al hacer hover sobre boton de subir */
-}
-
-@keyframes inflate {
-  0% {
-    transform: scale(1);
-    /* tamaño en escala 1:1*/
-  }
-  50% {
-    transform: scale(1.15);
-    /* tamaño en escala 1.15:1 */
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 /* Views */
 /* Contenedor info de contacto */
 .contact {
@@ -762,35 +762,6 @@ footer {
     width: 90vw;
     /* ancho de la imagen de footer del home */
   }
-}
-
-.error {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-self: center;
-  justify-content: center;
-  background-color: #F0F0F0;
-  height: 100vh;
-}
-.error .error__img {
-  height: 40vh;
-}
-.error a {
-  color: #FFF;
-  margin-top: 2rem;
-  padding: 1.5rem 1rem;
-  border-radius: 20px;
-  background-color: #042B58;
-  text-decoration: none;
-  transition: all 0.5s ease;
-}
-.error a:hover {
-  color: #042B58;
-  background-color: #85C6E3;
-  /* color de fondo al hacer hover sobre el boton */
-  transform: scale(1.2);
-  /* para aumentar el tamaño sin que me desplace el resto del contenido */
 }
 
 /*# sourceMappingURL=styles.css.map */
