@@ -1,0 +1,5 @@
+@mixin scale($color, $bg-color, $scale) {
+    color: $color;
+    background-color: $bg-color; /* color de fondo al hacer hover sobre el boton */
+    transform: scale($scale); /* para aumentar el tamaño sin que me desplace el resto del contenido */
+}

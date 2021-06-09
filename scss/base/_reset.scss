@@ -1,0 +1,87 @@
+/* Reseteo inicial */
+@import '../base/colors';
+@import '../base/fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* dar color y fuente a todo el body*/
+body {
+    font-family: $montserrat; /* fuente a utilizar */
+    color: $darkBlue; /* color general de fuente */
+}
+
+/* alinear centrados los encabezados h1 y con separación del proximo elemento*/
+h1 {
+    font-size: $h1Size; /* dar tamaño al encabezado h1 */
+    text-align: center; /* alinear centrado el encabezado h1 */
+    margin-bottom: 1rem; /* separación inferior del encabezado*/
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        font-size: 2rem; /* tamaño de fuente encabezado h1 */
+    }
+}
+
+h2 {
+    text-align: left; /* alinear centrados los encabezados h2*/
+    margin: 1rem 0; /* margen superior e inferior de encabezados h2 */
+}
+
+/* incrementar el grosor de los textos */
+p {
+    font-family: $openSans;
+    font-size: 1rem; /* tamaño de fuente */
+    font-weight: 400; /* grosor de la fuente */
+    line-height: 1.5em; /* interlineado de texto */
+
+    a {
+        color: $opaqueBlue;
+
+        &:hover {
+            color: $darkBlue; /* color del texto al hacer hover en enlaces dentro de tags <p> */
+        }
+    }
+}
+/* dar color a los enlaces */
+a {
+    color: $xLightGray; /* color del texto de los enlaces */
+
+    &:hover {
+        color: $xLightGray; /* color de los enlaces al posicionar el mouse encima */
+    }
+
+    &:active {
+        color: $activeLink; /* color del enlace en el momento de clickear*/
+    }
+}
+
+address {
+    a {
+        color: $opaqueBlue;
+
+        &:hover {
+            color: $darkBlue; /* color del texto al hacer hover en enlaces dentro de tags <p> */
+        }
+    }    
+}
+
+.no-undl {
+    text-decoration: none; /* quitar el subrayado de enlaces */
+}
+
+@media only screen and (max-width: 991px) {
+    nav {
+        ul {
+            li {
+                a {
+                    font-size: 1.3rem; /* tamaño de fuente de los enlaces de los items */
+                }
+            }
+        }
+    }
+}

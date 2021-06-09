@@ -1,0 +1,22 @@
+/* posicionamiento de boton de subir */
+.up {
+    position:fixed; /* posiciono boton en el viewport - elemento flotante */
+    bottom: 5rem; /* lo posiciono abajo */
+    right: 1.5rem; /* y a la derecha*/
+    z-index: 200; /* le doy un valor de 200 para que quede por encima de todo*/
+
+    &:hover {
+        animation: inflate 1s ease-in; /* animación al hacer hover sobre boton de subir */
+    }
+}
+
+@keyframes inflate {
+    0% {
+        transform: scale(1); /* tamaño en escala 1:1*/
+    } 50% {
+        transform: scale(1.15); /* tamaño en escala 1.15:1 */
+    }
+    100% {
+        transform: scale(1) /* tamaño en escala 1:1*/
+    }
+}

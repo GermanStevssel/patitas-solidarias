@@ -1,0 +1,36 @@
+@import '../base/colors';
+
+/* alineacion de botones adopción */
+.buttons {
+    display: flex; /* convertir en flexbox */
+    justify-content: space-around; /* posicionado de los elementos */
+    width: 70vw; /* ancho del contenedor de los botones */
+    margin: 0 auto; /* centrado del contenedor */
+}
+
+/* Boton con Metodología BEM */
+.button {
+    display: inline-block;
+    color: $xLightGray;
+    font-weight: bold;
+    margin-top: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: $darkBlue;
+    border-radius: 20px;
+    text-decoration: none;
+    width: 8rem; /* darle igual ancho a los botones */
+    transition: all 0.5s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        @include scale($darkBlue, $bgButtonHover, 1.5)
+    }
+}
+
+.button__text {
+    text-transform: uppercase;
+}
+
+

@@ -1,0 +1,24 @@
+/* Main File */
+/* Base */
+@import 'base/colors';
+@import 'base/fonts';
+@import 'base/reset';
+
+/* Utilities */
+@import 'utilities/functions';
+@import 'utilities/mixins';
+
+/* Components */
+@import 'components/banner';
+@import 'components/buttons';
+@import 'components/carousel';
+
+/* Layout */
+@import 'layout/cont';
+@import 'layout/footer';
+@import 'layout/navigation';
+
+/* Views */
+@import 'views/contact';
+@import 'views/home';
+@import 'views/404';

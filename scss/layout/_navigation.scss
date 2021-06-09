@@ -1,0 +1,72 @@
+/* Navbar bg color */
+.navbar {
+    background-color: $darkBlue;
+}
+
+/* Ocultar logo en Desktop*/
+#logo-h {
+    display: none;
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        display: inline-block;
+    }
+}
+
+/* Navbar text links color*/
+.navbar.navbar-expand-lg.navbar-light a,
+.navbar.navbar-expand-lg.navbar-light li a,
+.navbar.navbar-expand-lg.navbar-light .dropdown-menu li a {
+    color: $xLightGray; 
+    &:hover {
+        color: $xLightGray;
+        background-color: $lightBlue; /* Bg hover color */
+    }
+
+    /* Para que el color siga siendo blanco mientras navego el submenu */
+    &:focus {
+        color: $xLightGray;
+    }
+}
+ /* bg color dropdown menu */
+ .dropdown-menu {
+    background-color: $darkBlue;
+}
+
+/* Icon responsive menu */
+.navbar-light {
+    .navbar-toggler {
+        width: 60px;
+        height: 60px;
+        border-width: 2px;
+        border-radius: 100%;
+        border-color: $transparency1;
+        color: $transparency4;
+
+        .navbar-toggler-icon {
+            background-image: url("../img/ico/dog-paw.png");
+        }    
+    }
+}
+
+/* Posición navbar index */
+.navh-center {
+    display: flex;
+    justify-content: center;
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        justify-content: flex-start;
+    }
+}
+
+/*  Posición navbar resto de páginas */
+.nav-right {
+    display: flex;
+    justify-content: flex-end;
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,185 @@
+.cont {
+    display: flex; /* habilitar flexbox */
+    flex-direction: column; /* arreglo en columnas */
+    margin: 2rem auto 1rem; /* margenes del contenedor para que quede centrado */
+    width: 90%; /* ancho del contenedor */
+    overflow: hidden; /* para evitar que otros elementos ocupen el espacio */
+}
+
+.cont-adop {
+    display: flex; /* habilitar flexbox */
+    flex-direction: column; /* arreglo en columnas */
+    background-color: $darkBlue; /* color de fondo */
+    margin: 0 auto; /* margenes del contenedor para que quede centrado */
+    width: 90%; /* ancho del contenedor */
+    overflow: hidden; /* para evitar que otros elementos ocupen el espacio */
+
+    h2 {
+        text-align: center;
+        color: $xLightGray;
+    }
+
+    /* Uppercase en textos */
+    .upper {
+        text-transform: uppercase; /* dar formato mayuscula al texto */
+    }
+}
+
+.img-animals {
+    min-width: 100%; /* ancho de foto */
+    height: 50vh; /* alto de foto */
+    object-fit: cover; /* posicionamiento de la foto sin deformarse */
+}
+
+/* Tamaño imagenes colaboración*/
+.img-col {
+    width: 30vw; /* ancho imagen colaboracion */
+    height: 30vh; /* altura imagen colaboración */
+    object-fit: cover; /* que la foto se recorte y ocupe todo el espacio sin deformarse*/
+    object-position: 50% 30%;
+
+    @media (max-width: 991px) {
+        width: 100%; /* ancho de la imagen dentro del contenedor */
+    }
+}
+/* Tamaño imagenes calendario */
+.img-cal {
+    width: 100%; /* ancho imagen calendario */
+    height: 18rem; /* altura imagen calendario */
+    object-fit: cover; /* que la foto se recorte y ocupe todo el espacio sin deformarse*/
+    object-position: 0% 20%; /* posicionar foto dentro del espacio */
+}
+
+.line {
+    display: flex; /* habilitar flexbox */
+    justify-content: space-between; /* dar espacios horizontalmente sobre los elementos */
+
+    /* ----- Tablet ----- */
+    @media (max-width: 991px) {
+        flex-direction: column; /* arreglo en columnas */
+        justify-content: space-around; /* espaciado en ambos lados de elementos */
+    }
+
+    /* ----- Mobile ----- */
+    @media (max-width: 400px) {
+        flex-direction: column; /* arreglo en columnas */
+        justify-content: center; /* centrado vertical en column */
+        align-items: center; /* centrado horizontal en column*/
+        padding: 2vh 1vw; /* relleno vertical y horizontal */
+    } 
+}
+
+
+/* Alinear centrado */
+.center {
+    display: flex; /* habilitar flexbox */
+    align-items: center;  /* alinear verticalmente al centro*/
+}
+
+/* Alinear al inicio del contenedor */
+.start {
+    display: flex; /* habilitar flexbox */
+    align-items: flex-start;  /* alinear verticalmente al inicio */
+}
+
+.corners {
+    border-radius: 1rem; /* radio borde del contenedor */
+}
+
+/* 3 columnas de Calendario */
+.column-cal {
+    display: flex; /* convertir a flexbox */
+    justify-content: space-between; /* espaciado horizontal entre elementos */
+    margin: 1%; /* separación entre columnas*/
+
+    p {
+        text-align: center; /* centrado de parrafos en elementos de 3 columnas */
+    }
+
+    /* cambiar tamaño de fotos de calendario*/
+    img {
+        margin: 0.35rem 0 0 0.35rem; /* margenes de las imagenes superior e izquierdo - compensar*/
+        max-width: 100%;
+        height: auto; /* altura automatica para mantener relación de aspecto */
+    }
+
+    /* ----- Mobile ----- */
+    @media (max-width: 400px) {
+        flex-direction: column; /* arreglo en columnas */
+        justify-content: space-around; /* espaciado en ambos lados de los elementos */
+        align-items: center; /* centrado horizontal en column*/
+    }  
+}
+
+/* Contenedor de cada card con imagen y texto de mes */
+.month-img {
+    display: flex; /* convertir a flexbox */
+    flex-direction: column; /* posicionado en columna */
+    margin-bottom: 2%; /* margen inferior */
+}
+
+.column-2 {
+    width: 48%; /* darle ancho del 48% del contenedor sin margin */
+    margin: 0.5%; /* margin de las columnas */
+    
+    img {
+        max-width: 100%; /* ancho máximo de imagenes en contenedor */
+    }
+
+    a {
+        color: $opaqueBlue;       
+        
+        &:hover {
+            color: $darkBlue;
+        }
+    }
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        width: 100%; /* ancho de la columna */
+    }
+
+    p {
+        margin-top: 0.5rem;
+    }
+}
+
+.column-2-adop {
+    display: flex; /* transformar a flexbox */
+    justify-content: center; /* centrar los elementos */
+    width: 100%; /* darle un ancho del 50% del contenedor */
+    margin-bottom: 2rem; /* separación inferior y centrado*/
+}
+
+.column-2-40 {
+    width: 40%; /* ancho de columna */
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        width: 100%; /* ancho de la columna */
+    }
+}
+
+.column-2-60 {
+    width: 56%; /* ancho de columna */
+    
+    img {
+        width: 40rem; /* ancho de la imagen dentro de la columna*/
+    }
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        width: 100%; /* ancho de la columna */
+        
+        img {
+            width: 100%; /* ancho de la imagen dentro de la columna*/
+        }
+    }
+}
+
+/* Bg de contenedores */
+.bg-lightblue {
+    background-color: $bgLightColor; /* color de fondo */
+    padding: 2%; /* relleno interior */
+}
+

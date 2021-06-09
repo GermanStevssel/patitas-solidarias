@@ -1,0 +1,44 @@
+.adoption {
+    background-color: $darkBlue; /* color de fondo del banner */
+    display: flex; /* convertir a flexbox */
+    justify-content: space-between; /* centrar horizontalmente */
+    align-items: center; /* centrar verticalmente */
+    width: inherit; /* ancho igual al padre */
+
+    /* ----- Tablet y Mobile ----- */
+    @media (max-width: 991px) {
+        flex-direction: column; /* arreglo en columnas */
+    }
+
+    .img-adopt {
+        width: 50vw; /* ancho de la imagen del banner */
+    
+        /* ----- Tablet y Mobile ----- */
+        @media (max-width: 991px) {
+            width: 100vw; /* ancho de la imagen dentro de la columna*/
+        }
+    }
+
+    .text-banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3%;
+
+        .t-adop {
+            font-family: 'Montserrat', sans-serif; /* fuente a utilizar */
+            color: $xLightGray; /* color de texto de banner */
+            font-size: 3rem; /* tamaño de fuente del banner */
+            margin: 1rem;
+        
+            /* ----- Tablet y Mobile ----- */
+            @media (max-width: 991px) {
+                font-size: 1.8rem; /* tamaño de fuente del banner */
+                text-align: center; /* alineación centrada del texto en banner */
+                padding: 0.3rem; /* relleno del p del banner*/
+            }
+        }
+    }
+}
+
+

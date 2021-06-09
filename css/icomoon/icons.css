@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?bsoqi');
+  src:  url('fonts/icomoon.eot?bsoqi#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?bsoqi') format('truetype'),
+    url('fonts/icomoon.woff?bsoqi') format('woff'),
+    url('fonts/icomoon.svg?bsoqi#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+  content: "\e900";
+  font-size: 2em;
+  color: #f0f0f0;
+  margin: 0.2em;
+}
+.icon-facebook-c:before {
+  content: "\e900";
+  font-size: 2em;
+  color: #042b58;
+  margin: 0.2em;
+}
+.icon-instagram:before {
+  content: "\e902";
+  font-size: 2em;
+  color: #f0f0f0;
+  margin: 0.2em;
+}
+.icon-instagram-c:before {
+  content: "\e902";
+  font-size: 2em;
+  color: #042b58;
+  margin: 0.2em;
+}
+.icon-telegram:before {
+  content: "\e903";
+  font-size: 2em;
+  color: #f0f0f0;
+  margin: 0.2em;
+}
+.icon-telegram-c:before {
+  content: "\e903";
+  font-size: 2em;
+  color: #042b58;
+  margin: 0.2em;
+}
+.icon-paw-button:before {
+  content: "\e901";
+  font-size: 2.7em;
+  font-weight: bold;
+  color: #042b58;
+  float: right;
+  padding: 0.3em;
+  background-color: #85c6e3;
+  border: 0.1em solid;
+  border-color: #85c6e3;
+  border-radius: 15em;
+  box-shadow: 0 0.325rem 0.425rem #01244b ; /* color de la sombra del borde */
+}
+/* ----------------------- Tablet ----------------------- */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+    .icon-paw-button:before {
+      font-size: 2.2em;
+      padding: 0.2em;
+    }
+}
+/* ----------------------- Mobile ----------------------- */
+@media only screen and (max-width: 400px) {
+  .icon-paw-button:before {
+    display: none; /* quitar boton de subir en Mobile */
+  }
+}

@@ -1,0 +1,17 @@
+/* Contenedor Carousel */
+.container-carousel {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* ancho del carrousel */
+    margin-bottom: 2rem ; /* margenes automaticos */ 
+}
+
+.carousel-inner {
+    height: auto;
+    width: 90vw;
+
+    img {
+        height: auto;
+        width: 90vw;        
+    }
+}

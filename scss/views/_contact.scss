@@ -1,0 +1,44 @@
+/* Contenedor info de contacto */
+.contact {
+    display: flex; /* convertir a flexbox */
+    flex-direction: column;
+    align-items: center; /* centrado verticalmente */
+}
+
+/* Disposición de redes sociales en la página */
+.sn-row {
+    display: flex; /* convierto a flexbox */
+    justify-content: center; /* utilizo centrado */
+    margin: 1rem auto; /* margen */
+
+    /* ----- Mobile ----- */
+    @media (max-width: 400px) {
+        margin-top: 2rem; /* margen superior de las redes sociales */
+    }
+}
+
+/* Contenedor localización */
+.location {
+    display: flex; /* convertir a flexbox */
+    justify-content: center; /* dar separación a los elementos */
+    align-items: center; /* centrado verticalmente */
+    text-align: center;
+    width: 90vw; /* ancho del elemento */
+    margin: 1rem auto; /* Margen superior/inferior y centrado horizontalmente*/
+
+    p{
+        padding-left: .8rem ;
+        margin-bottom: 0; /* quitar margin-bottom que agrega bootstrap */
+    }
+}
+
+/* Ancho de mapa */
+.full-screen {
+    width: 100%; /* mapa ocupe el ancho del contenedor */
+}
+
+/* icono de locación */
+.icon {
+    height: 32px; /* altura de icono */
+    width: auto; /* ancho automatica de icono */
+}
