@@ -1,11 +1,11 @@
 {
-  "name": "desafio_12",
+  "name": "patitas-solidarias",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Germán Stevssel",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.0",
@@ -19,5 +19,5 @@
     "url": "https://github.com/GermanStevssel/patitas-solidarias/issues"
   },
   "homepage": "https://github.com/GermanStevssel/patitas-solidarias#readme",
-  "description": ""
+  "description": "Agrupación sin fines de lucro. Ayudamos animales a encontrar un nuevo hogar, tratamos de brindarles asistencia veterinaria o alimentos"
 }

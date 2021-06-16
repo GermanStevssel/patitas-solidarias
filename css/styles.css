@@ -503,6 +503,7 @@ footer {
 /* Navbar bg color */
 .navbar {
   background-color: #042B58;
+  height: 10vh;
 }
 
 /* Ocultar logo en Desktop*/
@@ -641,17 +642,18 @@ footer {
 
 .gradient {
   background: linear-gradient(to right, #0C97EB, #186397);
+  height: 100%;
 }
 
 /* Centrar logo y nombre del sitio y darle tamaño*/
 .cont-home {
   display: flex;
   /* convertir el contenedor en flexbox */
-  justify-content: center;
+  justify-content: flex-start;
   /* centrar los elementos hijos */
   flex-direction: column;
   /* acomodar en filas los elementos*/
-  height: 70vh;
+  height: 90vh;
   /* altura del contenedor */
   width: 80vw;
   /* ancho del contenedor*/
@@ -665,12 +667,11 @@ footer {
   .cont-home {
     display: flex;
     /* convertir a flexbox */
+    justify-content: center;
     flex-direction: column;
     /* arreglo en columna */
     align-items: center;
     /* alineación horizontal */
-    margin-top: 5rem;
-    /* margen superior */
   }
 }
 
@@ -702,8 +703,16 @@ footer {
   /* convertir a flexbox */
   justify-content: center;
   /*centrar el contenido */
+  margin-top: 15vh;
+  /* margen superior */
   width: 50%;
   /* ancho del contenedor */
+  z-index: 20;
+}
+@media (max-width: 991px) {
+  .item {
+    margin-top: 0;
+  }
 }
 
 .logo-home {
@@ -734,7 +743,7 @@ footer {
 
 /* Posición de imagen de footer en inicio*/
 .ft-h {
-  position: fixed;
+  position: absolute;
   /* posición fija de la imagen de footer del home */
   opacity: 0.7;
   /* opacidad del 0,7 */
@@ -746,8 +755,6 @@ footer {
   /* altura automatica manteniendo relación de asepcto*/
   margin: 0 auto;
   /* imagen centrada */
-  z-index: -1;
-  /* posicionado por detras de otros elementos */
   /* ----- Tablet ----- */
   /* ----- Mobile ----- */
 }
@@ -762,6 +769,24 @@ footer {
     width: 90vw;
     /* ancho de la imagen de footer del home */
   }
+}
+
+.container .training__cont {
+  display: flex;
+  justify-content: center;
+}
+.container .training__cont .training__video {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  /* aspect-ratio 16:9 */
+}
+.container .training__cont .video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */

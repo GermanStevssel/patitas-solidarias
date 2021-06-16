@@ -1,13 +1,14 @@
 .gradient {
     background: linear-gradient(to right, $lightBlue, $opaqueBlue);
+    height: 100%;
 }
 
 /* Centrar logo y nombre del sitio y darle tamaño*/
 .cont-home {
     display: flex; /* convertir el contenedor en flexbox */
-    justify-content: center; /* centrar los elementos hijos */
+    justify-content: flex-start; /* centrar los elementos hijos */
     flex-direction: column; /* acomodar en filas los elementos*/
-    height: 70vh; /* altura del contenedor */
+    height: 90vh; /* altura del contenedor */
     width: 80vw; /* ancho del contenedor*/
     margin: 0 auto; /* margenes del contenedor del home */
     align-items: center; /* alineacion vertical */
@@ -15,9 +16,9 @@
     /* ----- Tablet y Mobile ----- */
     @media (max-width: 991px) {
         display: flex; /* convertir a flexbox */
+        justify-content: center;
         flex-direction: column; /* arreglo en columna */
         align-items: center; /* alineación horizontal */
-        margin-top: 5rem; /* margen superior */
     }
 }
 
@@ -25,7 +26,7 @@
 .logo {
     display: flex; /* convertir a flexbox */
     justify-content: center; /* centrar horizontalmente */
-    align-items:center; /* centrar verticalmente */
+    align-items: center; /* centrar verticalmente */
 
     /* ----- Tablet y Mobile ----- */
     @media (max-width: 991px) {
@@ -37,11 +38,16 @@
     }
 }
 
-
 .item {
     display: flex; /* convertir a flexbox */
     justify-content: center; /*centrar el contenido */
+    margin-top: 15vh; /* margen superior */
     width: 50%; /* ancho del contenedor */
+    z-index: 20;
+
+    @media (max-width: 991px) {
+        margin-top: 0;
+    }
 }
 
 .logo-home {
@@ -66,13 +72,12 @@
 
 /* Posición de imagen de footer en inicio*/
 .ft-h {
-    position: fixed; /* posición fija de la imagen de footer del home */
+    position: absolute; /* posición fija de la imagen de footer del home */
     opacity: 0.7; /* opacidad del 0,7 */
     bottom: 0; /* posicionado a 0 del fondo */
     width: 40vw; /* ancho de la imagen de footer del home */
     height: auto; /* altura automatica manteniendo relación de asepcto*/
     margin: 0 auto; /* imagen centrada */
-    z-index: -1; /* posicionado por detras de otros elementos */
     
     /* ----- Tablet ----- */
     @media (max-width: 991px) {
@@ -84,3 +89,23 @@
         width: 90vw; /* ancho de la imagen de footer del home */
     }
 } 
+
+.container {
+    .training__cont {
+        display: flex;
+        justify-content: center;
+
+        .training__video {
+            position: relative;
+            height: 0;
+            padding-bottom: 56.25%; /* aspect-ratio 16:9 */
+        }
+        .video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
