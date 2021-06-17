@@ -8,7 +8,7 @@
     display: flex; /* convertir el contenedor en flexbox */
     justify-content: flex-start; /* centrar los elementos hijos */
     flex-direction: column; /* acomodar en filas los elementos*/
-    height: 90vh; /* altura del contenedor */
+    min-height: 90vh; /* altura del contenedor */
     width: 80vw; /* ancho del contenedor*/
     margin: 0 auto; /* margenes del contenedor del home */
     align-items: center; /* alineacion vertical */
