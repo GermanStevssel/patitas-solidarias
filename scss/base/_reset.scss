@@ -11,7 +11,7 @@
 
 /* dar color y fuente a todo el body*/
 body {
-    font-family: 'Montserrat', sans-serif; /* fuente a utilizar */
+    font-family: $montserrat; /* fuente a utilizar */
     color: $darkBlue; /* color general de fuente */
 }
 
@@ -34,7 +34,7 @@ h2 {
 
 /* incrementar el grosor de los textos */
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: $openSans;
     font-size: 1rem; /* tamaño de fuente */
     font-weight: 400; /* grosor de la fuente */
     line-height: 1.5em; /* interlineado de texto */
