@@ -91,21 +91,50 @@
 } 
 
 .container {
-    .training__cont {
-        display: flex;
-        justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
-        .training__video {
-            position: relative;
-            height: 0;
-            padding-bottom: 56.25%; /* aspect-ratio 16:9 */
+    .training {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        
+        @media (max-width: 991px) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
         }
-        .video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+
+        .training__text {
+            width: 45%;
+
+            @media (max-width: 991px) {
+                width: 100%
+            }
+        }
+
+        .training__container {
+            width: 45%;
+            @media (max-width: 991px) {
+                width: 100%
+            }
+
+            .training__vidresponsive {
+                position: relative;
+                width: 100%;
+                height: 0;
+                padding-top: 56.25%;
+                overflow: hidden;
+
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
     }
 }
