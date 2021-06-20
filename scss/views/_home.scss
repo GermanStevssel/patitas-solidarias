@@ -8,7 +8,7 @@
     display: flex; /* convertir el contenedor en flexbox */
     justify-content: flex-start; /* centrar los elementos hijos */
     flex-direction: column; /* acomodar en filas los elementos*/
-    min-height: calc(100vh - 76px); /* altura del contenedor */
+    height: calc(100vh - 11.4vh); /* altura del contenedor */
     width: 80vw; /* ancho del contenedor*/
     margin: 0 auto; /* margenes del contenedor del home */
     align-items: center; /* alineacion vertical */
@@ -42,7 +42,7 @@
     display: flex; /* convertir a flexbox */
     justify-content: center; /*centrar el contenido */
     margin-top: 15vh; /* margen superior */
-    width: 50%; /* ancho del contenedor */
+    width: 80%; /* ancho del contenedor */
     z-index: 20;
 
     @media (max-width: 991px) {

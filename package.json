@@ -19,5 +19,6 @@
     "url": "https://github.com/GermanStevssel/patitas-solidarias/issues"
   },
   "homepage": "https://github.com/GermanStevssel/patitas-solidarias#readme",
-  "description": "Agrupación sin fines de lucro. Ayudamos animales a encontrar un nuevo hogar, tratamos de brindarles asistencia veterinaria o alimentos"
+  "description": "Agrupación sin fines de lucro. Ayudamos animales a encontrar un nuevo hogar, tratamos de brindarles asistencia veterinaria o alimentos",
+  "dependencies": {}
 }

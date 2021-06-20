@@ -1,7 +1,7 @@
 /* Navbar bg color */
 .navbar {
     background-color: $darkBlue;
-    min-height: 76px;
+    height: 11.4vh;
 }
 
 /* Ocultar logo en Desktop*/
@@ -37,8 +37,8 @@
 /* Icon responsive menu */
 .navbar-light {
     .navbar-toggler {
-        width: 60px;
-        height: 60px;
+        width: 3.5rem;
+        height: 3.5rem;
         border-width: 2px;
         border-radius: 100%;
         border-color: $transparency1;

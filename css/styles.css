@@ -503,7 +503,7 @@ footer {
 /* Navbar bg color */
 .navbar {
   background-color: #042B58;
-  min-height: 76px;
+  height: 11.4vh;
 }
 
 /* Ocultar logo en Desktop*/
@@ -544,8 +544,8 @@ footer {
 
 /* Icon responsive menu */
 .navbar-light .navbar-toggler {
-  width: 60px;
-  height: 60px;
+  width: 3.5rem;
+  height: 3.5rem;
   border-width: 2px;
   border-radius: 100%;
   border-color: rgba(255, 255, 255, 0.1);
@@ -653,7 +653,7 @@ footer {
   /* centrar los elementos hijos */
   flex-direction: column;
   /* acomodar en filas los elementos*/
-  min-height: calc(100vh - 76px);
+  height: calc(100vh - 11.4vh);
   /* altura del contenedor */
   width: 80vw;
   /* ancho del contenedor*/
@@ -705,7 +705,7 @@ footer {
   /*centrar el contenido */
   margin-top: 15vh;
   /* margen superior */
-  width: 50%;
+  width: 80%;
   /* ancho del contenedor */
   z-index: 20;
 }
