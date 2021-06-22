@@ -540,8 +540,8 @@ footer {
 
 /* Icon responsive menu */
 .navbar-light .navbar-toggler {
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 60px;
+  height: 60px;
   border-width: 2px;
   border-radius: 100%;
   border-color: rgba(255, 255, 255, 0.1);
