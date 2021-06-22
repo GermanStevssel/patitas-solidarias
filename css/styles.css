@@ -503,7 +503,7 @@ footer {
 /* Navbar bg color */
 .navbar {
   background-color: #042B58;
-  height: 11.4vh;
+  min-height: 60px;
 }
 
 /* Ocultar logo en Desktop*/
@@ -653,7 +653,7 @@ footer {
   /* centrar los elementos hijos */
   flex-direction: column;
   /* acomodar en filas los elementos*/
-  height: calc(100vh - 11.4vh);
+  min-height: calc(100vh - 60px);
   /* altura del contenedor */
   width: 80vw;
   /* ancho del contenedor*/
@@ -667,6 +667,8 @@ footer {
   .cont-home {
     display: flex;
     /* convertir a flexbox */
+    min-height: calc(100vh - 76px);
+    /* altura del contenedor */
     justify-content: center;
     flex-direction: column;
     /* arreglo en columna */
