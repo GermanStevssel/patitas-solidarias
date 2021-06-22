@@ -31,17 +31,6 @@
     object-fit: cover; /* posicionamiento de la foto sin deformarse */
 }
 
-/* Tamaño imagenes colaboración*/
-.img-col {
-    width: 30vw; /* ancho imagen colaboracion */
-    height: 30vh; /* altura imagen colaboración */
-    object-fit: cover; /* que la foto se recorte y ocupe todo el espacio sin deformarse*/
-    object-position: 50% 30%;
-
-    @media (max-width: 991px) {
-        width: 100%; /* ancho de la imagen dentro del contenedor */
-    }
-}
 /* Tamaño imagenes calendario */
 .img-cal {
     width: 100%; /* ancho imagen calendario */
