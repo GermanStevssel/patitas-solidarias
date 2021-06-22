@@ -1,8 +1,26 @@
 /* Contenedor info de contacto */
-.contact {
-    display: flex; /* convertir a flexbox */
+.form-row {
+    display: flex;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center; /* centrado verticalmente */
+    border-radius: 10px;
+    padding: 2rem;
+  
+    .text-area {
+      height: 12vh;
+    }
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+
+    .contact__items {
+        display: flex; /* convertir a flexbox */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* centrado verticalmente */
+    }
 }
 
 /* Disposición de redes sociales en la página */

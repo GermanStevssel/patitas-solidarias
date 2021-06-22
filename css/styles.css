@@ -580,10 +580,26 @@ footer {
 
 /* Views */
 /* Contenedor info de contacto */
+.form-row {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 2rem;
+}
+.form-row .text-area {
+  height: 12vh;
+}
+
 .contact {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact__items {
   display: flex;
   /* convertir a flexbox */
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   /* centrado verticalmente */
 }

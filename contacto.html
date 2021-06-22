@@ -113,35 +113,77 @@
     </nav>
   </header>
     
-  <section class="cont">
+  <main class="container">
     <h1>Mantengámonos en contacto</h1>
-    <div class="contact">
-      <p>
-          Si queres escribirnos, podes hacerlo al siguiente email:
-      </p>
-      <!-- uso etiqueta semántica para dirección contacto -->
-      <address>
-          <a href="mailto: info@patitasolidarias.com">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <form action="" method="POST">
+          <div class="form-row">
+            <div class="form-floating mb-3">
+              <input 
+                type="text" 
+                id="name" 
+                class="form-control"
+                name="Nombre" 
+                placeholder="Escribe tu nombre"
+                required
+              >
+              <label for="name">Nombre</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input 
+                type="email" 
+                id="email"
+                class="form-control"
+                name="Email"
+                placeholder="miemail@mail.com"
+                required
+              >
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating">
+              <textarea 
+                name="Mensaje" 
+                id="message" 
+                class="form-control text-area"
+                placeholder="Escribe tu mensaje"
+                required>
+              </textarea>
+              <label for="message">Escribe tu mensaje</label>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-lg-6 col-12 contact">
+        <div class="contact__items">
+          <p>
+            También, podes esribirnos al siguiente email:
+          </p>
+          <!-- uso etiqueta semántica para dirección contacto -->
+          <address>
+            <a href="mailto: info@patitasolidarias.com">
               info@patitasolidarias.com
-          </a>
-      </address>
-      <p>
-          También podés buscarnos y agregarnos en las siguientes redes sociales, donde solemos dar más información de
-          eventos y necesidades.
-      </p>
-      <div>
-        <a class="no-undl" href="https://www.facebook.com" target="_blank" rel="noreferrer">
-            <i class="icon-facebook-c"></i>
-        </a>
-        <a class="no-undl" href="https://www.instagram.com" target="_blank" rel="noreferrer">
-            <i class="icon-instagram-c"></i>
-        </a>
-        <a class="no-undl" href="https://web.telegram.org/#/login" target="_blank" rel="noreferrer">
-            <i class="icon-telegram-c"></i>
-        </a>
+            </a>
+          </address>
+          <p>
+            No te olvides de buscarnos y agregarnos en las siguientes redes sociales, donde solemos dar más información de
+            eventos y necesidades.
+          </p>
+          <div>
+            <a class="no-undl" href="https://www.facebook.com" target="_blank" rel="noreferrer">
+              <i class="icon-facebook-c"></i>
+            </a>
+            <a class="no-undl" href="https://www.instagram.com" target="_blank" rel="noreferrer">
+              <i class="icon-instagram-c"></i>
+            </a>
+            <a class="no-undl" href="https://web.telegram.org/#/login" target="_blank" rel="noreferrer">
+              <i class="icon-telegram-c"></i>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
+  </main>
   <!-- Mapa de localicación -->
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3103.171026172202!2d-68.05782888411976!3d-38.942921079563675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzjCsDU2JzM0LjUiUyA2OMKwMDMnMjAuMyJX!5e0!3m2!1ses-419!2sar!4v1618774902863!5m2!1ses-419!2sar"
@@ -150,7 +192,7 @@
   <div class="location">
     <img src="img/ico/location.png" alt="Icono localización" class="icon">
     <p>
-        Podes encontrarnos en Caviahue 248, Neuquén
+      Podes encontrarnos en Caviahue 248, Neuquén
     </p>
   </div>
   <footer class="line center">
