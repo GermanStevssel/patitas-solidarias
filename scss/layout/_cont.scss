@@ -85,32 +85,33 @@
         text-align: center; /* centrado de parrafos en elementos de 3 columnas */
     }
 
-    /* cambiar tamaño de fotos de calendario*/
-    img {
-        margin: 0.35rem 0 0 0.35rem; /* margenes de las imagenes superior e izquierdo - compensar*/
-        max-width: 100%;
-        height: auto; /* altura automatica para mantener relación de aspecto */
-        filter: grayscale(80%);
-        transition: all ease .7s;
+    /* Contenedor de cada card con imagen y texto de mes */
+    .month-img {
+        display: flex; /* convertir a flexbox */
+        flex-direction: column; /* posicionado en columna */
+        margin-bottom: 2%; /* margen inferior */
+        cursor: pointer;
 
-        &:hover {
-            filter: grayscale(0%);
+        /* cambiar tamaño de fotos de calendario*/
+        img {
+            margin: 0.35rem 0 0 0.35rem; /* margenes de las imagenes superior e izquierdo - compensar*/
+            max-width: 100%;
+            height: auto; /* altura automatica para mantener relación de aspecto */
+            filter: grayscale(80%);
+            transition: all ease .7s;
+
+            &:hover {
+                filter: grayscale(0%);
+            }
         }
     }
-
+    
     /* ----- Mobile ----- */
     @media (max-width: 400px) {
         flex-direction: column; /* arreglo en columnas */
         justify-content: space-around; /* espaciado en ambos lados de los elementos */
         align-items: center; /* centrado horizontal en column*/
     }  
-}
-
-/* Contenedor de cada card con imagen y texto de mes */
-.month-img {
-    display: flex; /* convertir a flexbox */
-    flex-direction: column; /* posicionado en columna */
-    margin-bottom: 2%; /* margen inferior */
 }
 
 .column-2 {
@@ -136,6 +137,24 @@
 
     p {
         margin-top: 0.5rem;
+    }
+}
+/* Colocar imagenes de colaboración al inicio */
+.coll-img-start {
+    display: flex;
+    justify-content: flex-start;
+    /* Colocar imagenes de colaboración al centro */
+    @media (max-width: 991px) {
+        justify-content: center;
+    }
+}
+/* Colocar imagenes de colaboración al final */
+.coll-img-end {
+    display: flex;
+    justify-content: flex-end;
+    /* Colocar imagenes de colaboración al centro */
+    @media (max-width: 991px) {
+        justify-content: center;
     }
 }
 

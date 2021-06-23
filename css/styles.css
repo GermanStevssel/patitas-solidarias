@@ -373,14 +373,24 @@ address a:hover {
   /* espaciado horizontal entre elementos */
   margin: 1%;
   /* separación entre columnas*/
-  /* cambiar tamaño de fotos de calendario*/
+  /* Contenedor de cada card con imagen y texto de mes */
   /* ----- Mobile ----- */
 }
 .column-cal p {
   text-align: center;
   /* centrado de parrafos en elementos de 3 columnas */
 }
-.column-cal img {
+.column-cal .month-img {
+  display: flex;
+  /* convertir a flexbox */
+  flex-direction: column;
+  /* posicionado en columna */
+  margin-bottom: 2%;
+  /* margen inferior */
+  cursor: pointer;
+  /* cambiar tamaño de fotos de calendario*/
+}
+.column-cal .month-img img {
   margin: 0.35rem 0 0 0.35rem;
   /* margenes de las imagenes superior e izquierdo - compensar*/
   max-width: 100%;
@@ -389,7 +399,7 @@ address a:hover {
   filter: grayscale(80%);
   transition: all ease 0.7s;
 }
-.column-cal img:hover {
+.column-cal .month-img img:hover {
   filter: grayscale(0%);
 }
 @media (max-width: 400px) {
@@ -401,16 +411,6 @@ address a:hover {
     align-items: center;
     /* centrado horizontal en column*/
   }
-}
-
-/* Contenedor de cada card con imagen y texto de mes */
-.month-img {
-  display: flex;
-  /* convertir a flexbox */
-  flex-direction: column;
-  /* posicionado en columna */
-  margin-bottom: 2%;
-  /* margen inferior */
 }
 
 .column-2 {
@@ -438,6 +438,30 @@ address a:hover {
 }
 .column-2 p {
   margin-top: 0.5rem;
+}
+
+/* Colocar imagenes de colaboración al inicio */
+.coll-img-start {
+  display: flex;
+  justify-content: flex-start;
+  /* Colocar imagenes de colaboración al centro */
+}
+@media (max-width: 991px) {
+  .coll-img-start {
+    justify-content: center;
+  }
+}
+
+/* Colocar imagenes de colaboración al final */
+.coll-img-end {
+  display: flex;
+  justify-content: flex-end;
+  /* Colocar imagenes de colaboración al centro */
+}
+@media (max-width: 991px) {
+  .coll-img-end {
+    justify-content: center;
+  }
 }
 
 .column-2-adop {
