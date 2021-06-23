@@ -386,6 +386,11 @@ address a:hover {
   max-width: 100%;
   height: auto;
   /* altura automatica para mantener relación de aspecto */
+  filter: grayscale(80%);
+  transition: all ease 0.7s;
+}
+.column-cal img:hover {
+  filter: grayscale(0%);
 }
 @media (max-width: 400px) {
   .column-cal {

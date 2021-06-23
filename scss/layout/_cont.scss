@@ -90,6 +90,12 @@
         margin: 0.35rem 0 0 0.35rem; /* margenes de las imagenes superior e izquierdo - compensar*/
         max-width: 100%;
         height: auto; /* altura automatica para mantener relación de aspecto */
+        filter: grayscale(80%);
+        transition: all ease .7s;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
     }
 
     /* ----- Mobile ----- */
