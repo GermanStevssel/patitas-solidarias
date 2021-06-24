@@ -163,6 +163,10 @@
     justify-content: center; /* centrar los elementos */
     width: 100%; /* darle un ancho del 50% del contenedor */
     margin-bottom: 2rem; /* separación inferior y centrado*/
+
+    @media (max-width: 400px) {
+        margin: 2rem 0;
+    }
 }
 
 .column-2-40 {

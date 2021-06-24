@@ -232,9 +232,46 @@ address a:hover {
   -webkit-transform: scale(1.5);
   -o-transform: scale(1.5);
 }
-
-.button__text {
+.button .button__text {
   text-transform: uppercase;
+}
+@media (max-width: 400px) {
+  .button {
+    padding: 1rem 1rem;
+    margin: 0.5rem;
+  }
+}
+
+/* Contenedor boton enviar */
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  /* diseño boton de enviar */
+}
+.contact-btn .contact-btn__send {
+  display: inline-block;
+  color: #F0F0F0;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  width: fit-content;
+  background-color: #042B58;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.5s ease;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-btn .contact-btn__send:hover {
+  color: #042B58;
+  background-color: #85C6E3;
+  /* color de fondo al hacer hover sobre el boton */
+  transform: scale(1.2);
+  /* para aumentar el tamaño sin que me desplace el resto del contenido */
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 
 /* Contenedor Carousel */
@@ -474,6 +511,11 @@ address a:hover {
   margin-bottom: 2rem;
   /* separación inferior y centrado*/
 }
+@media (max-width: 400px) {
+  .column-2-adop {
+    margin: 2rem 0;
+  }
+}
 
 .column-2-40 {
   width: 40%;
@@ -614,7 +656,7 @@ footer {
   justify-content: flex-start;
   flex-direction: column;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 2rem 2rem 0;
 }
 .form-row .text-area {
   height: 12vh;

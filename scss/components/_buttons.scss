@@ -27,10 +27,44 @@
     &:hover {
         @include scale($darkBlue, $bgButtonHover, 1.5)
     }
+
+    .button__text {
+        text-transform: uppercase;
+    }
+
+    @media (max-width: 400px) {
+        padding: 1rem 1rem;
+        margin: 0.5rem;
+    }
+}
+/* Contenedor boton enviar */
+.contact-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+    /* diseño boton de enviar */
+    .contact-btn__send {
+        display: inline-block;
+        color: $xLightGray;
+        font-weight: bold;
+        padding: 1rem 1.5rem;
+        width: fit-content;
+        background-color: $darkBlue;
+        border-radius: 20px;
+        text-decoration: none;
+        transition: all 0.5s ease;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            @include scale($darkBlue, $bgButtonHover, 1.2)
+        }
+    }
 }
 
-.button__text {
-    text-transform: uppercase;
-}
+
+
 
 
