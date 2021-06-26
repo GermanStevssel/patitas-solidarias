@@ -16,7 +16,7 @@
     margin-top: 2rem;
     padding: 1.5rem 2rem;
     background-color: $darkBlue;
-    border-radius: 20px;
+    
     text-decoration: none;
     width: 8rem; /* darle igual ancho a los botones */
     transition: all 0.5s ease;
@@ -25,7 +25,7 @@
     align-items: center;
 
     &:hover {
-        @include scale($darkBlue, $bgButtonHover, 1.5)
+        @include scale($darkBlue, $bgButtonHover, 1.15)
     }
 
     .button__text {
@@ -51,7 +51,7 @@
         padding: 1rem 1.5rem;
         width: fit-content;
         background-color: $darkBlue;
-        border-radius: 20px;
+        border: none;
         text-decoration: none;
         transition: all 0.5s ease;
         display: inline-flex;
@@ -59,7 +59,7 @@
         align-items: center;
 
         &:hover {
-            @include scale($darkBlue, $bgButtonHover, 1.2)
+            @include scale($darkBlue, $bgButtonHover, 1.15)
         }
     }
 }

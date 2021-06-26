@@ -214,7 +214,6 @@ address a:hover {
   margin-top: 2rem;
   padding: 1.5rem 2rem;
   background-color: #042B58;
-  border-radius: 20px;
   text-decoration: none;
   width: 8rem;
   /* darle igual ancho a los botones */
@@ -227,11 +226,11 @@ address a:hover {
   color: #042B58;
   background-color: #85C6E3;
   /* color de fondo al hacer hover sobre el boton */
-  transform: scale(1.5);
+  transform: scale(1.15);
   /* para aumentar el tamaño sin que me desplace el resto del contenido */
-  -moz-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
 .button .button__text {
   text-transform: uppercase;
@@ -257,7 +256,7 @@ address a:hover {
   padding: 1rem 1.5rem;
   width: fit-content;
   background-color: #042B58;
-  border-radius: 20px;
+  border: none;
   text-decoration: none;
   transition: all 0.5s ease;
   display: inline-flex;
@@ -268,11 +267,11 @@ address a:hover {
   color: #042B58;
   background-color: #85C6E3;
   /* color de fondo al hacer hover sobre el boton */
-  transform: scale(1.2);
+  transform: scale(1.15);
   /* para aumentar el tamaño sin que me desplace el resto del contenido */
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  -o-transform: scale(1.2);
+  -moz-transform: scale(1.15);
+  -webkit-transform: scale(1.15);
+  -o-transform: scale(1.15);
 }
 
 /* Contenedor Carousel */
