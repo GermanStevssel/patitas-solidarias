@@ -95,6 +95,7 @@ address a:hover {
 /* Utilities */
 /* posicionamiento de boton de subir */
 .up {
+  display: none;
   position: fixed;
   /* posiciono boton en el viewport - elemento flotante */
   bottom: 5rem;
