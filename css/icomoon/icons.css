@@ -27,12 +27,16 @@
 
 .icon-vision:before {
   content: "\e904";
+  color: #F0F0F0;
 }
 .icon-objetivo:before {
   content: "\e905";
+  color: #F0F0F0;
+  font-weight: 500;
 }
 .icon-pasion:before {
   content: "\e906";
+  color: #F0F0F0;
 }
 .icon-facebook:before {
   content: "\e900";

@@ -23,7 +23,7 @@ h1 {
   /* dar tamaño al encabezado h1 */
   text-align: center;
   /* alinear centrado el encabezado h1 */
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   /* separación inferior del encabezado*/
   /* ----- Tablet y Mobile ----- */
 }
@@ -299,7 +299,7 @@ address a:hover {
   /* habilitar flexbox */
   flex-direction: column;
   /* arreglo en columnas */
-  margin: 2rem auto 1rem;
+  margin: 2rem auto;
   /* margenes del contenedor para que quede centrado */
   width: 90%;
   /* ancho del contenedor */
@@ -555,6 +555,16 @@ address a:hover {
   /* color de fondo */
   padding: 2%;
   /* relleno interior */
+}
+
+.objective-icon {
+  background-color: #0C97EB;
+  border-radius: 13px;
+  width: 8rem;
+}
+
+.objective-heading {
+  text-align: center;
 }
 
 /*diseño de footer*/

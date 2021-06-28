@@ -1,7 +1,7 @@
 .cont {
     display: flex; /* habilitar flexbox */
     flex-direction: column; /* arreglo en columnas */
-    margin: 2rem auto 1rem; /* margenes del contenedor para que quede centrado */
+    margin: 2rem auto; /* margenes del contenedor para que quede centrado */
     width: 90%; /* ancho del contenedor */
     overflow: hidden; /* para evitar que otros elementos ocupen el espacio */
 }
@@ -201,3 +201,12 @@
     padding: 2%; /* relleno interior */
 }
 
+.objective-icon {
+    background-color: $lightBlue;
+    border-radius: 13px;
+    width: 8rem;
+}
+
+.objective-heading {
+    text-align: center;
+}

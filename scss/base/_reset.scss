@@ -19,7 +19,7 @@ body {
 h1 {
     font-size: $h1Size; /* dar tamaño al encabezado h1 */
     text-align: center; /* alinear centrado el encabezado h1 */
-    margin-bottom: 1rem; /* separación inferior del encabezado*/
+    margin-bottom: 2rem; /* separación inferior del encabezado*/
 
     /* ----- Tablet y Mobile ----- */
     @media (max-width: 991px) {
