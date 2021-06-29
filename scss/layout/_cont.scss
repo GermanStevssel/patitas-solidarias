@@ -179,10 +179,13 @@
 }
 
 .column-2-60 {
+    display: flex;
+    justify-content: center;
     width: 56%; /* ancho de columna */
-    
+    align-items: flex-start;
+        
     img {
-        width: 40rem; /* ancho de la imagen dentro de la columna*/
+        width: 35rem; /* ancho de la imagen dentro de la columna*/
     }
 
     /* ----- Tablet y Mobile ----- */

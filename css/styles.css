@@ -530,12 +530,15 @@ address a:hover {
 }
 
 .column-2-60 {
+  display: flex;
+  justify-content: center;
   width: 56%;
   /* ancho de columna */
+  align-items: flex-start;
   /* ----- Tablet y Mobile ----- */
 }
 .column-2-60 img {
-  width: 40rem;
+  width: 35rem;
   /* ancho de la imagen dentro de la columna*/
 }
 @media (max-width: 991px) {
