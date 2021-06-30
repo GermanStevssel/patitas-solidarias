@@ -818,7 +818,7 @@ footer .subfooter p {
   flex-direction: column;
   /* acomodar en filas los elementos*/
   min-height: calc(100vh - 60px);
-  /* altura del contenedor */
+  /* altura del contenedor (60px altura Navbar) */
   width: 80vw;
   /* ancho del contenedor*/
   margin: 0 auto;
