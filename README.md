@@ -15,7 +15,7 @@
 
 - 📫 How to reach me **germancstevssel@gmail.com**
 
-- 📄 Know about my experiences [i worked in oil&gas industrie and right now, I´m an operations planner in a generating electrical energy company, trying to do some other things](i worked in oil&gas industrie and right now, I´m an operations planner in a generating electrical energy company, trying to do some other things)
+- 📄 Know about my experiences [I worked in oil&gas industrie and right now, I´m an operations planner in a generating electrical energy company, trying to do some other things](i worked in oil&gas industrie and right now, I´m an operations planner in a generating electrical energy company, trying to do some other things)
 
 - ⚡ Fun fact **I have been trying to study web development since 2014, and this time is for real**
 

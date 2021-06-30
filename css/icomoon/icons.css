@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?gzcp24');
-  src:  url('fonts/icomoon.eot?gzcp24#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?gzcp24') format('truetype'),
-    url('fonts/icomoon.woff?gzcp24') format('woff'),
-    url('fonts/icomoon.svg?gzcp24#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?rna836');
+  src:  url('fonts/icomoon.eot?rna836#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?rna836') format('truetype'),
+    url('fonts/icomoon.woff?rna836') format('woff'),
+    url('fonts/icomoon.svg?rna836#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,11 +25,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-email:before {
+  content: "\e909";
+}
+.icon-location:before {
+  content: "\e908";
+}
+.icon-list:before {
+  content: "\e907";
+}
 .icon-vision:before {
   content: "\e904";
   color: #F0F0F0;
 }
-.icon-objetivo:before {
+.icon-mision:before {
   content: "\e905";
   color: #F0F0F0;
   font-weight: 500;
@@ -44,10 +53,22 @@
   color: #f0f0f0;
   margin: 0.2rem;
 }
+.icon-facebook:hover:before {
+  content: "\e900";
+  font-size: 2rem;
+  color: #85C6E3;
+  margin: 0.2rem;
+}
 .icon-facebook-c:before {
   content: "\e900";
   font-size: 2rem;
   color: #042b58;
+  margin: 0.2rem;
+}
+.icon-facebook-c:hover:before {
+  content: "\e900";
+  font-size: 2rem;
+  color: #0C97EB;
   margin: 0.2rem;
 }
 .icon-instagram:before {
@@ -56,10 +77,22 @@
   color: #f0f0f0;
   margin: 0.2rem;
 }
+.icon-instagram:hover:before {
+  content: "\e902";
+  font-size: 2rem;
+  color: #85C6E3;
+  margin: 0.2rem;
+}
 .icon-instagram-c:before {
   content: "\e902";
   font-size: 2rem;
   color: #042b58;
+  margin: 0.2rem;
+}
+.icon-instagram-c:hover:before {
+  content: "\e902";
+  font-size: 2rem;
+  color: #0C97EB;
   margin: 0.2rem;
 }
 .icon-telegram:before {
@@ -68,10 +101,22 @@
   color: #f0f0f0;
   margin: 0.2rem;
 }
+.icon-telegram:hover:before {
+  content: "\e903";
+  font-size: 2rem;
+  color: #85C6E3;
+  margin: 0.2rem;
+}
 .icon-telegram-c:before {
   content: "\e903";
   font-size: 2rem;
   color: #042b58;
+  margin: 0.2rem;
+}
+.icon-telegram-c:hover:before {
+  content: "\e903";
+  font-size: 2rem;
+  color: #0C97EB;
   margin: 0.2rem;
 }
 .icon-paw-button:before {
@@ -79,7 +124,6 @@
   font-size: 2.7rem;
   font-weight: bold;
   color: #042b58;
-  float: right;
   padding: 0.5rem;
   background-color: #85c6e3;
   border: 0.1rem solid;
@@ -87,6 +131,7 @@
   border-radius: 15rem;
   box-shadow: 0 0.325rem 0.425rem #01244b ; /* color de la sombra del borde */
 }
+
 /* ----------------------- Tablet ----------------------- */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     .icon-paw-button:before {

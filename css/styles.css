@@ -267,11 +267,11 @@ address a:hover {
   color: #042B58;
   background-color: #85C6E3;
   /* color de fondo al hacer hover sobre el boton */
-  transform: scale(1.15);
+  transform: scale(1.05);
   /* para aumentar el tamaño sin que me desplace el resto del contenido */
-  -moz-transform: scale(1.15);
-  -webkit-transform: scale(1.15);
-  -o-transform: scale(1.15);
+  -moz-transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -o-transform: scale(1.05);
 }
 
 /* Contenedor Carousel */
@@ -574,13 +574,78 @@ address a:hover {
 footer {
   color: #F0F0F0;
   /* color del texto */
-  width: 100%;
-  /* ancho del footer, igual al body */
-  padding: 0 2vw;
-  height: 15vh;
-  /* alto de la barra  del footer*/
   background-color: #042B58;
   /* color de fondo del footer */
+}
+footer .footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 0 1rem;
+  margin-bottom: 0;
+}
+footer .footer p:first-child {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+footer .footer .footer__name {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer .footer__name ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer .footer__name ul li a {
+  text-decoration: none;
+}
+footer .footer .footer__name ul li a:hover {
+  color: #85C6E3;
+}
+footer .footer .footer__contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer .footer__contact .email {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer .footer__contact .email div {
+  display: flex;
+  align-items: baseline;
+}
+footer .footer .footer__contact .email div i {
+  margin-right: 0.5rem;
+}
+footer .footer .footer__contact .email div .email__contact a {
+  color: #F0F0F0;
+}
+footer .footer .footer__contact .email div .email__contact a:hover {
+  color: #85C6E3;
+}
+footer .footer .footer__contact .social {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .footer .footer__contact .social a:not(:first-child) {
+  padding-left: 1rem;
+}
+@media (max-width: 600px) {
+  footer .footer {
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 2rem;
+  }
+}
+footer .subfooter {
+  border-top: #F0F0F0 solid 1px;
+  margin: 0 2rem;
+}
+footer .subfooter p {
+  text-align: center;
+  padding: 0.2rem 0;
+  margin-bottom: 0;
 }
 
 /* Navbar bg color */
@@ -716,7 +781,7 @@ footer {
   text-align: center;
   width: 90vw;
   /* ancho del elemento */
-  margin: 1rem auto;
+  margin: 2rem auto;
   /* Margen superior/inferior y centrado horizontalmente*/
 }
 .location p {

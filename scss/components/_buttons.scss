@@ -59,7 +59,7 @@
         align-items: center;
 
         &:hover {
-            @include scale($darkBlue, $bgButtonHover, 1.15)
+            @include scale($darkBlue, $bgButtonHover, 1.05)
         }
     }
 }
