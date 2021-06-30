@@ -30,11 +30,11 @@
 
     /* ----- Tablet y Mobile ----- */
     @media (max-width: 991px) {
-            display: flex; /* convertir a flexbox */
-            flex-direction: column;
-            justify-content: center; /* centrar verticalmente */
-            align-items:center; /* centrar horizontalmente */
-            margin: 0 auto 2rem /* margenes del logo */
+        display: flex; /* convertir a flexbox */
+        flex-direction: column;
+        justify-content: center; /* centrar verticalmente */
+        align-items:center; /* centrar horizontalmente */
+        margin: 0 auto 2rem /* margenes del logo */
     }
 }
 
