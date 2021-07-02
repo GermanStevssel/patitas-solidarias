@@ -15,8 +15,8 @@
 }
 
 /* Navbar text links color*/
-.navbar.navbar-expand-lg.navbar-light a,
 .navbar.navbar-expand-lg.navbar-light li a,
+.navbar.navbar-expand-lg.navbar-light li button, 
 .navbar.navbar-expand-lg.navbar-light .dropdown-menu li a {
     color: $xLightGray; 
     &:hover {
@@ -33,6 +33,10 @@
  .dropdown-menu {
     background-color: $darkBlue;
 }
+.btn-group, 
+.btn-group-vertical {
+    align-items: baseline;
+}
 
 /* Icon responsive menu */
 .navbar-light {
@@ -40,12 +44,12 @@
         width: 60px;
         height: 60px;
         border-width: 2px;
-        border-radius: 10%;
+        border-radius: 100%;
         border-color: $transparency1;
         color: $transparency4;
 
         .navbar-toggler-icon {
-            background-image: url("../img/ico/menu.png");
+            background-image: url("../img/ico/dog-paw.png");
         }    
     }
 }
