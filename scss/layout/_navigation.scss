@@ -71,3 +71,13 @@
         justify-content: flex-start;
     }
 }
+
+.btn-group,
+.btn-group-vertical {
+    flex-wrap: wrap;
+}
+
+.btn-group-vertical>.btn, 
+.btn-group>.btn {
+    flex: 0 1 auto;
+}

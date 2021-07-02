@@ -728,6 +728,16 @@ footer .subfooter p {
   }
 }
 
+.btn-group,
+.btn-group-vertical {
+  flex-wrap: wrap;
+}
+
+.btn-group-vertical > .btn,
+.btn-group > .btn {
+  flex: 0 1 auto;
+}
+
 /* Views */
 /* Contenedor info de contacto */
 .form-row {
