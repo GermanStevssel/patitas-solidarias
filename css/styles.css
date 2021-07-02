@@ -812,14 +812,6 @@ footer .subfooter p {
   /* mapa ocupe el ancho del contenedor */
 }
 
-/* icono de locación */
-.icon {
-  height: 32px;
-  /* altura de icono */
-  width: auto;
-  /* ancho automatica de icono */
-}
-
 .gradient {
   background: linear-gradient(to right, #0C97EB, #186397);
 }
