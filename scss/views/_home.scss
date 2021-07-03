@@ -94,6 +94,7 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
 
+    /* contenedor de video y texto */
     .training {
         display: flex;
         justify-content: space-between;
@@ -114,12 +115,13 @@
             }
         }
 
+        /* contenedor de video */
         .training__container {
             width: 45%;
             @media (max-width: 991px) {
                 width: 100%
             }
-
+            /* 56.25% por la relación de aspecto */
             .training__vidresponsive {
                 position: relative;
                 width: 100%;

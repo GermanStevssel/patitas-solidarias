@@ -285,6 +285,7 @@ address a:hover {
   /* margenes automaticos */
 }
 
+/* tamaño del carrousel */
 .carousel-inner {
   height: auto;
   width: 90vw;
@@ -663,6 +664,7 @@ footer .subfooter p {
 @media (max-width: 991px) {
   #logo-h {
     display: inline-block;
+    /* mostrar logo */
   }
 }
 
@@ -691,6 +693,7 @@ footer .subfooter p {
   background-color: #042B58;
 }
 
+/* alineación del split button con el texto */
 .btn-group,
 .btn-group-vertical {
   align-items: baseline;
@@ -704,6 +707,7 @@ footer .subfooter p {
   border-radius: 20%;
   border-color: rgba(255, 255, 255, 0.1);
   color: rgba(255, 255, 255, 0.4);
+  /* icono del menú en tablet y mobile */
 }
 .navbar-light .navbar-toggler .navbar-toggler-icon {
   background-image: url("../img/ico/menu.png");
@@ -733,11 +737,13 @@ footer .subfooter p {
   }
 }
 
+/* para ajustar el contenido a la ventana */
 .btn-group,
 .btn-group-vertical {
   flex-wrap: wrap;
 }
 
+/* para que el boton no se expanda a todo el contenedor */
 .btn-group-vertical > .btn,
 .btn-group > .btn {
   flex: 0 1 auto;
@@ -947,12 +953,14 @@ footer .subfooter p {
 .container {
   margin-top: 2rem;
   margin-bottom: 2rem;
+  /* contenedor de video y texto */
 }
 .container .training {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  /* contenedor de video */
 }
 @media (max-width: 991px) {
   .container .training {
@@ -971,6 +979,7 @@ footer .subfooter p {
 }
 .container .training .training__container {
   width: 45%;
+  /* 56.25% por la relación de aspecto */
 }
 @media (max-width: 991px) {
   .container .training .training__container {

@@ -10,7 +10,7 @@
 
     /* ----- Tablet y Mobile ----- */
     @media (max-width: 991px) {
-        display: inline-block;
+        display: inline-block; /* mostrar logo */
     }
 }
 
@@ -33,6 +33,7 @@
  .dropdown-menu {
     background-color: $darkBlue;
 }
+/* alineación del split button con el texto */
 .btn-group, 
 .btn-group-vertical {
     align-items: baseline;
@@ -47,7 +48,7 @@
         border-radius: 20%;
         border-color: $transparency1;
         color: $transparency4;
-
+        /* icono del menú en tablet y mobile */
         .navbar-toggler-icon {
             background-image: url("../img/ico/menu.png");
         }    
@@ -75,12 +76,12 @@
         justify-content: flex-start;
     }
 }
-
+/* para ajustar el contenido a la ventana */
 .btn-group,
 .btn-group-vertical {
     flex-wrap: wrap;
 }
-
+/* para que el boton no se expanda a todo el contenedor */
 .btn-group-vertical>.btn, 
 .btn-group>.btn {
     flex: 0 1 auto;
