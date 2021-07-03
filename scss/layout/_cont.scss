@@ -50,7 +50,7 @@
     }
 
     /* ----- Mobile ----- */
-    @media (max-width: 400px) {
+    @media (max-width: 576px) {
         flex-direction: column; /* arreglo en columnas */
         justify-content: center; /* centrado vertical en column */
         align-items: center; /* centrado horizontal en column*/
@@ -107,7 +107,7 @@
     }
     
     /* ----- Mobile ----- */
-    @media (max-width: 400px) {
+    @media (max-width: 576px) {
         flex-direction: column; /* arreglo en columnas */
         justify-content: space-around; /* espaciado en ambos lados de los elementos */
         align-items: center; /* centrado horizontal en column*/
@@ -164,7 +164,7 @@
     width: 100%; /* darle un ancho del 50% del contenedor */
     margin-bottom: 2rem; /* separación inferior y centrado*/
 
-    @media (max-width: 400px) {
+    @media (max-width: 576px) {
         margin: 2rem 0;
     }
 }

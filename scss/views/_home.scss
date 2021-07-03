@@ -34,7 +34,7 @@
         flex-direction: column;
         justify-content: center; /* centrar verticalmente */
         align-items:center; /* centrar horizontalmente */
-        margin: 0 auto 2rem /* margenes del logo */
+        margin: 0 auto; /* margenes del logo */
     }
 }
 
@@ -54,7 +54,7 @@
     width: 20vw; /* ancho del logo del home */
 
     /* ----- Mobile ----- */
-    @media (max-width: 400px) {
+    @media (max-width: 576px) {
         width: 50vw;
     }
 }
@@ -90,18 +90,76 @@
     }
 
     /* ----- Mobile ----- */
-    @media (max-width: 400px) {
+    @media (max-width: 576px) {
         width: 90vw; /* ancho de la imagen de footer del home */
     }
 } 
 
+.adh {
+    background-image: url("../img/adopt/adopt-home2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    background-color: $darkBlue;
+
+    @media (max-width: 991px) {
+        background-image: url("../img/adopt/adopt-home.webp");
+        height: 80vh;
+    }
+
+    .adh__center {
+        align-self: center;
+    }
+
+    .adh__container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        color: $xLightGray;
+
+        h1 {
+            text-align: start;
+        }
+
+        .adh__title {
+            display: block;
+            font-size: 4rem;
+            font-weight: 700;
+            color: $lightBlue;
+            text-transform: uppercase;
+
+            @media (max-width: 576px) {
+                font-size: 2.8rem;
+            }
+        }
+
+        .adh__text {
+            color: $xLightGray;
+            font-size: 1.2rem;
+            line-height: 1.5rem;
+        }
+
+        .adh__button {
+            color: $xLightGray;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 0.5rem 1rem;
+            margin: 0 auto;
+            background-color: $lightBlue;
+        }
+    }
+}
+
 .container {
     margin-top: 2rem;
     margin-bottom: 2rem;
-
-    /* contenedor de video y texto */
-    .training {
+    
+    .training {/* contenedor de video y texto */
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: center;
         width: 100%;
