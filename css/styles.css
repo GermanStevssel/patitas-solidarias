@@ -275,6 +275,15 @@ address a:hover {
   -o-transform: scale(1.05);
 }
 
+/* enlace de cuenta bancaria */
+.button-col {
+  color: #042B58;
+  font-weight: 500;
+}
+.button-col:hover {
+  color: #0C97EB;
+}
+
 /* Contenedor Carousel */
 .container-carousel {
   display: flex;

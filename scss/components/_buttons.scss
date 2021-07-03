@@ -63,6 +63,15 @@
         }
     }
 }
+/* enlace de cuenta bancaria */
+.button-col {
+    color: $darkBlue;
+    font-weight: 500;
+
+    &:hover {
+        color: $lightBlue;
+    }
+}
 
 
 
