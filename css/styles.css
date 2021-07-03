@@ -916,10 +916,15 @@ footer .subfooter p {
 
 /* configuración título */
 .title-home {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
   color: #FFF;
   /* color del texto */
   font-size: 5.5rem;
   /* tamaño de fuente */
+  margin-bottom: 2rem;
   /* ----- Tablet y Mobile ----- */
 }
 @media (max-width: 991px) {
