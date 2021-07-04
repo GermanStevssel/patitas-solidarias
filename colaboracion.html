@@ -49,25 +49,6 @@
 </head>
 
 <body>
-    <div class="modal" id="cuentaBancaria" tabindex="-1">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">BANCO BBVA</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p><strong>CBU:</strong> 1000230000000456789012</p>
-                    <p><strong>ALIAS:</strong> patitas.solidarias</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
-                        Salir
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
     <header class="shadow">
         <!-- Menu con logo BOOTSTRAP -->
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -138,7 +119,7 @@
                     Nuestro trabajo es muy difícil sin tu ayuda. Eventualmente, se difunde cuando es necesario
                     recolectar dinero,
                     que será destinado siempre a la compra de alimentos, medicamentos o el pago de consultas
-                    veterinarias de
+                    veterinarias de 
                     perros rescatados en la vía pública.
                 </p>
                 <p>
@@ -146,12 +127,33 @@
                 </p>
                 <!-- Pop up con los datos de la cuenta -->
                 <span class="d-flex justify-content-center">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                        data-bs-target="#cuentaBancaria">Cuenta Bancaria</button>
+                    <a role="button" class="h-button" data-bs-toggle="modal"
+                        data-bs-target="#cuentaBancaria">Cuenta Bancaria</a>
                 </span>
+                <!-- Inicio modal bootstrap -->
+                <div class="modal" id="cuentaBancaria" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">BANCO BBVA</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>CBU:</strong> 1000230000000456789012</p>
+                                <p><strong>ALIAS:</strong> patitas.solidarias</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">
+                                    Salir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin modal bootstrap -->
             </div>
             <div class="col-lg-6 col-12 coll-img-end">
-                <img src="img/collaboration/donations.jpg" alt="Imagen relativa a donaciones" class="img-fluid"
+                <img src="img/collaboration/donations.webp" alt="Imagen relativa a donaciones" class="img-fluid"
                     loading="lazy">
             </div>
         </div>
@@ -170,14 +172,14 @@
                 </p>
             </div>
             <div class="col-lg-6 col-12 coll-img-end">
-                <img src="img/collaboration/sponsorship-program.jpg" alt="Imagen de apadrinamiento" class="img-fluid"
+                <img src="img/collaboration/sponsorship-program.webp" alt="Imagen de apadrinamiento" class="img-fluid"
                     loading="lazy">
             </div>
         </div>
         <h2 id="hogar">Hogar de Tránsito</h2>
         <div class="row mb-5 d-flex align-items-center">
             <div class="col-lg-6 col-12 coll-img-start">
-                <img src="img/collaboration/transitory-homes.jpg" alt="Foto relativa a hogares de transito"
+                <img src="img/collaboration/transitory-homes.webp" alt="Foto relativa a hogares de transito"
                     class="img-fluid" loading="lazy">
             </div>
             <div class="col-lg-6 col-12">
@@ -197,7 +199,7 @@
         <h2 id="difusion">Difusión</h2>
         <div class="row mb-5 d-flex align-items-center">
             <div class="col-lg-6 col-12 coll-img-start">
-                <img src="img/collaboration/diffusion.jpg" alt="Foto relativa a compartir info o pedidos en las redes"
+                <img src="img/collaboration/diffusion.webp" alt="Foto relativa a compartir info o pedidos en las redes"
                     class="img-fluid" loading="lazy">
             </div>
             <div class="col-lg-6 col-12">
