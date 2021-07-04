@@ -12,6 +12,10 @@
         -webkit-animation: inflate 1s ease-in;
         -o-animation: inflate 1s ease-in;
     }
+
+    a {
+        text-decoration: none;
+    }
 }
 
 @keyframes inflate {

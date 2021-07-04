@@ -113,6 +113,9 @@ address a:hover {
   -webkit-animation: inflate 1s ease-in;
   -o-animation: inflate 1s ease-in;
 }
+.up a {
+  text-decoration: none;
+}
 
 @keyframes inflate {
   0% {
