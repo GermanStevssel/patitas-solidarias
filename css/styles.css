@@ -197,17 +197,17 @@ address a:hover {
 
 /* alineacion de botones adopción */
 .h-button {
-  color: #F0F0F0;
+  color: #042B58;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 500;
   padding: 0.5rem 1rem;
   margin: 2rem auto;
-  background-color: #0C97EB;
+  background-color: #85C6E3;
 }
 .h-button:hover {
-  color: #042B58;
-  background-color: #85C6E3;
+  color: #F0F0F0;
+  background-color: #0C97EB;
 }
 
 .buttons {
