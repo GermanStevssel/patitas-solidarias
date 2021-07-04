@@ -1,6 +1,21 @@
 @import '../base/colors';
 
 /* alineacion de botones adopción */
+
+.h-button {
+    color: $xLightGray;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    margin: 2rem auto;
+    background-color: $lightBlue;
+
+    &:hover {
+        color: $darkBlue;
+        background-color: $bgButtonHover;
+    }
+}
+
 .buttons {
     display: flex; /* convertir en flexbox */
     justify-content: space-around; /* posicionado de los elementos */

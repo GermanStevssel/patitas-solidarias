@@ -45,7 +45,7 @@ h2 {
 /* incrementar el grosor de los textos */
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   /* tamaño de fuente */
   font-weight: 400;
   /* grosor de la fuente */
@@ -196,6 +196,19 @@ address a:hover {
 }
 
 /* alineacion de botones adopción */
+.h-button {
+  color: #F0F0F0;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  margin: 2rem auto;
+  background-color: #0C97EB;
+}
+.h-button:hover {
+  color: #042B58;
+  background-color: #85C6E3;
+}
+
 .buttons {
   display: flex;
   /* convertir en flexbox */
@@ -390,6 +403,11 @@ address a:hover {
     padding: 2vh 1vw;
     /* relleno vertical y horizontal */
   }
+}
+
+.container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* Alinear centrado */
@@ -966,7 +984,7 @@ footer .subfooter p {
 }
 
 .adh {
-  background-image: url("../img/adopt/adopt-home2.webp");
+  background-image: url("../img/bg/adopt-home2.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -977,7 +995,7 @@ footer .subfooter p {
 }
 @media (max-width: 991px) {
   .adh {
-    background-image: url("../img/adopt/adopt-home.webp");
+    background-image: url("../img/bg/adopt-home.webp");
     height: 80vh;
   }
 }
@@ -1010,18 +1028,22 @@ footer .subfooter p {
   font-size: 1.2rem;
   line-height: 1.5rem;
 }
-.adh .adh__container .adh__button {
-  color: #F0F0F0;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  margin: 0 auto;
-  background-color: #0C97EB;
-}
 
 .container {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.container .ad-can {
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #0C97EB;
+  margin: 2rem 0;
+}
+@media (max-width: 576px) {
+  .container .ad-can {
+    font-size: 1.8rem;
+  }
 }
 .container .training {
   /* contenedor de video y texto */
@@ -1040,6 +1062,11 @@ footer .subfooter p {
   }
 }
 .container .training .training__text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1.5rem 0;
+  background-color: #042B58;
+  color: #F0F0F0;
   width: 45%;
 }
 @media (max-width: 991px) {

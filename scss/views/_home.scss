@@ -96,7 +96,7 @@
 } 
 
 .adh {
-    background-image: url("../img/adopt/adopt-home2.webp");
+    background-image: url("../img/bg/adopt-home2.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
@@ -106,7 +106,7 @@
     background-color: $darkBlue;
 
     @media (max-width: 991px) {
-        background-image: url("../img/adopt/adopt-home.webp");
+        background-image: url("../img/bg/adopt-home.webp");
         height: 80vh;
     }
 
@@ -141,21 +141,24 @@
             font-size: 1.2rem;
             line-height: 1.5rem;
         }
-
-        .adh__button {
-            color: $xLightGray;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 0.5rem 1rem;
-            margin: 0 auto;
-            background-color: $lightBlue;
-        }
     }
 }
 
 .container {
     margin-top: 2rem;
     margin-bottom: 2rem;
+
+    .ad-can {
+        font-size: 2.5rem;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: $lightBlue;
+        margin: 2rem 0;
+
+        @media (max-width: 576px) {
+            font-size: 1.8rem;
+        }
+    }
     
     .training {/* contenedor de video y texto */
         display: flex;
@@ -171,6 +174,11 @@
         }
 
         .training__text {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 1.5rem 0;
+            background-color: $darkBlue;
+            color: $xLightGray;
             width: 45%;
 
             @media (max-width: 991px) {
@@ -181,6 +189,7 @@
         /* contenedor de video */
         .training__container {
             width: 45%;
+            
             @media (max-width: 991px) {
                 width: 100%
             }
