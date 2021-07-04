@@ -36,6 +36,8 @@
   <!-- Linkear fuentes -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+  <!-- Linkear AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Favicon -->
   <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="192x192" href="img/ico/apple-icon.png">
@@ -102,7 +104,7 @@
   <!-- Inicio sección Quienes Somos -->
   <main class="cont">
     <h1>¿Quiénes somos?</h1>
-    <div class="line center">
+    <div class="line center mb-3">
       <div class="column-2-40">
         <p>
           Somos un grupo de personas, decididos a iniciar un cambio, a generar conciencia y realizar actos solidarios y
@@ -115,7 +117,7 @@
         </p>
       </div>
       <div class="column-2-60">
-        <img src="img/us/us.jpg" alt="Foto de los integrantes de la ONG">
+        <img src="img/us/us.jpg" alt="Foto de los integrantes de la ONG" class="img-fluid">
       </div>
     </div>
     <p>
@@ -137,7 +139,7 @@
   <!-- Inicio Visión, Misión y Pasión -->
   <section class="py-5">
     <div class="container my-4">
-      <div class="row text-center">
+      <div class="row text-center" data-aos="zoom-in">
 
         <div class="objective col-lg-4">
           <div class="objective-icon card m-auto py-4 mb-2 mb-sm-4 shadow-lg">
@@ -250,6 +252,12 @@
     </div>
   </footer>
   <!-- Fin Footer -->
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
   <!-- Script para boton de ir arriba -->
   <script defer src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>

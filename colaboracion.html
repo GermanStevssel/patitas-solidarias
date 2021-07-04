@@ -41,6 +41,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap"
         rel="stylesheet">
+    <!-- Linkear AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="192x192" href="img/ico/apple-icon.png">
@@ -154,7 +156,7 @@
             </div>
             <div class="col-lg-6 col-12 coll-img-end">
                 <img src="img/collaboration/donations.webp" alt="Imagen relativa a donaciones" class="img-fluid"
-                    loading="lazy">
+                    loading="lazy" data-aos="flip-left">
             </div>
         </div>
         <h2 id="padrino-madrina">Programa de Padrino y Madrina</h2>
@@ -173,14 +175,14 @@
             </div>
             <div class="col-lg-6 col-12 coll-img-end">
                 <img src="img/collaboration/sponsorship-program.webp" alt="Imagen de apadrinamiento" class="img-fluid"
-                    loading="lazy">
+                    loading="lazy" data-aos="flip-left">
             </div>
         </div>
         <h2 id="hogar">Hogar de Tránsito</h2>
         <div class="row mb-5 d-flex align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 col-12 coll-img-start">
                 <img src="img/collaboration/transitory-homes.webp" alt="Foto relativa a hogares de transito"
-                    class="img-fluid" loading="lazy">
+                    class="img-fluid" loading="lazy" data-aos="flip-right">
             </div>
             <div class="col-lg-6 col-12">
                 <p>
@@ -200,7 +202,7 @@
         <div class="row mb-5 d-flex align-items-center flex-column-reverse flex-lg-row">
             <div class="col-lg-6 col-12 coll-img-start">
                 <img src="img/collaboration/diffusion.webp" alt="Foto relativa a compartir info o pedidos en las redes"
-                    class="img-fluid" loading="lazy">
+                    class="img-fluid" loading="lazy" data-aos="flip-right">
             </div>
             <div class="col-lg-6 col-12">
                 <p>
@@ -294,6 +296,12 @@
         </div>
     </footer>
     <!-- Fin Footer -->
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Script para boton de ir arriba -->
     <script defer src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>

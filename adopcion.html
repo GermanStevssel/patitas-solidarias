@@ -34,6 +34,8 @@
     <!-- Linkear fuentes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- Linkear AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="192x192" href="img/ico/apple-icon.png">
@@ -117,7 +119,7 @@
 
     <!-- Botones para ir a secciones -->
     <section>
-        <nav class="buttons">
+        <nav class="buttons" data-aos="zoom-in">
             <!-- boton para ir a sección de perros -->
             <div class="column-2-adop">
                 <a href="#perros" role="button" class="button" title="Boton para sección de perros">
@@ -135,7 +137,7 @@
     <!-- Fin sección botones -->
 
     <!-- Carousel fotos mascotas en adopción BOOTSTRAP -->
-    <section class="container-carousel">
+    <section class="container-carousel" data-aos="zoom-in-right">
         <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -210,17 +212,17 @@
         <h2 class="upper">Perros</h2>
         <div class="line start bg-lightblue">
             <div class="column-2">
-                <img src="img/adopt/pelito.jpg" alt="Perro mediano y peludo" class="img-animals">
+                <img src="img/adopt/pelito.jpg" alt="Perro mediano y peludo" class="img-fluid">
                 <p>
                     Pelito es un perro de tamaño mediano, muy tranquilo y leal.
                     Tiene aproximadamente 8 años y vive en la plaza de Caviahue y Santa Fe.
                 </p>
-                <p>
+                <p class="mb-5">
                     Si queres conocerlo, podes comunicarte con nosotros.
                 </p>
             </div>
             <div class="column-2">
-                <img src="img/adopt/ringo.jpg" alt="Perro mediano" class="img-animals">
+                <img src="img/adopt/ringo.jpg" alt="Perro mediano" class="img-fluid">
                 <p>
                     Este perrito se llama Ringo. Sufrió un accidente que lo dejo
                     con un problema en la cadera, limitando su movilidad en su pata izquierda trasera. El también vive
@@ -240,18 +242,18 @@
         <h2 class="upper">Gatos</h2>
         <div class="line start bg-lightblue">
             <div class="column-2">
-                <img src="img/adopt/federico.jpg" alt="Gato 1" class="img-animals">
+                <img src="img/adopt/federico.jpg" alt="Gato 1" class="img-fluid">
                 <p>
                     Este gatito, al que nombramos Federico, suele verse deambulando por la plaza de Basabilvaso y Santa
                     Fe. Suele mantenerse alejado de la gente,
                     pero visitándolo seguido, comienza a entrar en confianza y deja que lo acaricien.
                 </p>
-                <p>
+                <p class="mb-5">
                     Si queres conocerlo, podes comunicarte con nosotros.
                 </p>
             </div>
             <div class="column-2">
-                <img src="img/adopt/simba.jpg" alt="Gato 2" class="img-animals">
+                <img src="img/adopt/simba.jpg" alt="Gato 2" class="img-fluid">
                 <p>
                     Simba, es un gatito que suele pasar mucho tiempo en diferentes casas de
                     los vecinos de la zona, pero desafortunadamente no tiene una familia.
@@ -339,6 +341,12 @@
         </div>
     </footer>
     <!-- Fin Footer -->
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Script para boton de ir arriba -->
     <script defer src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>

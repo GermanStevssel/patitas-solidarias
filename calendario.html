@@ -34,6 +34,8 @@
     <!-- Linkear fuentes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- Linkear AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="192x192" href="img/ico/apple-icon.png">
@@ -101,7 +103,7 @@
     <!-- Info de calendario -->
     <main class="cont">
         <h1>Calendario Solidario 2021</h1>
-        <div class="line center bg-lightblue corners">
+        <div class="line center bg-lightblue corners" data-aos="flip-down">
             <div class="column-2">
                 <p>
                     Todos los años, en conjunto con <strong><a href="https://www.boutiquedemascotas.com/" target="_blank" rel="noreferrer">"WOW, Boutique de Mascotas"</a></strong> se realiza un calendario solidario, con una campaña donde cualquiera puede postular a
@@ -127,7 +129,7 @@
     <!-- Fotos de calendario -->
     <section class="cont">
         <h2>Participantes</h2>
-        <div class="column-cal">
+        <div class="column-cal" data-aos="zoom-in-left">
             <div class="month-img">
                 <img src="img/calendar/ene-21.webp" loading="lazy" alt="Mico, perro del mes de Enero">
                 <p>Enero</p>
@@ -141,7 +143,7 @@
                 <p>Marzo</p>
             </div>
         </div>
-        <div class="column-cal">
+        <div class="column-cal" data-aos="zoom-in-right">
             <div class="month-img">
                 <img src="img/calendar/abr-21.webp" loading="lazy" alt="Roman, perro del mes de Abril">
                 <p>Abril</p>
@@ -155,7 +157,7 @@
                 <p>Mayo</p>
             </div>
         </div>
-        <div class="column-cal">
+        <div class="column-cal" data-aos="zoom-in-left">
             <div class="month-img">
                 <img src="img/calendar/jun-21.webp" loading="lazy" alt="Bragi, perro del mes de Junio">
                 <p>Junio</p>
@@ -169,7 +171,7 @@
                 <p>Agosto</p>
             </div>
         </div>
-        <div class="column-cal">
+        <div class="column-cal" data-aos="zoom-in-right">
             <div class="month-img">
                 <img src="img/calendar/tips-2.webp" loading="lazy" alt="Chuleta, perro con el segundo Tip">
                 <p>Tip 2</p>
@@ -183,7 +185,7 @@
                 <p>Octubre</p>
             </div>
         </div>
-        <div class="column-cal">
+        <div class="column-cal" data-aos="zoom-in-left">
             <div class="month-img">
                 <img src="img/calendar/nov-21.webp" loading="lazy" alt="Traful, gato del mes de Noviembre">
                 <p>Noviembre</p>
@@ -276,6 +278,12 @@
         </div>
     </footer>
     <!-- Fin Footer -->
+
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- Script para boton de ir arriba -->
     <script defer src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>

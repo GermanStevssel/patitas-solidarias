@@ -25,12 +25,6 @@
     }
 }
 
-.img-animals {
-    min-width: 100%; /* ancho de foto */
-    height: 50vh; /* alto de foto */
-    object-fit: cover; /* posicionamiento de la foto sin deformarse */
-}
-
 /* Tamaño imagenes calendario */
 .img-cal {
     width: 100%; /* ancho imagen calendario */
@@ -122,10 +116,6 @@
     width: 48%; /* darle ancho del 48% del contenedor sin margin */
     margin: 0.5%; /* margin de las columnas */
     
-    img {
-        max-width: 100%; /* ancho máximo de imagenes en contenedor */
-    }
-
     a {
         color: $opaqueBlue;       
         
@@ -137,6 +127,7 @@
     /* ----- Tablet y Mobile ----- */
     @media (max-width: 991px) {
         width: 100%; /* ancho de la columna */
+        margin: 0;
     }
 
     p {

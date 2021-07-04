@@ -355,15 +355,6 @@ address a:hover {
   /* dar formato mayuscula al texto */
 }
 
-.img-animals {
-  min-width: 100%;
-  /* ancho de foto */
-  height: 50vh;
-  /* alto de foto */
-  object-fit: cover;
-  /* posicionamiento de la foto sin deformarse */
-}
-
 /* Tamaño imagenes calendario */
 .img-cal {
   width: 100%;
@@ -486,10 +477,6 @@ address a:hover {
   /* margin de las columnas */
   /* ----- Tablet y Mobile ----- */
 }
-.column-2 img {
-  max-width: 100%;
-  /* ancho máximo de imagenes en contenedor */
-}
 .column-2 a {
   color: #186397;
 }
@@ -500,6 +487,7 @@ address a:hover {
   .column-2 {
     width: 100%;
     /* ancho de la columna */
+    margin: 0;
   }
 }
 .column-2 p {

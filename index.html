@@ -38,6 +38,8 @@
     <!-- Linkear fuentes -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500&family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- Linkear AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <link rel="apple-touch-icon" sizes="192x192" href="img/ico/apple-icon.png">
@@ -121,7 +123,7 @@
   <main class="adh">
     <div class="container adh__center">
       <div class="col-lg-6 col-12">
-        <div class="adh__container">
+        <div class="adh__container" data-aos="zoom-in-down">
           <h1>Abrí tu corazón a un nuevo amigo  
             <span class="adh__title">adopta una mascota</span>
           </h1>
@@ -141,9 +143,9 @@
 
   <!-- Inicio sección adiestramiento -->
   <section class="container">
-    <h2 class="ad-can">Adiestramiento canino</h2>
+    <h2 class="ad-can" data-aos="fade-right">Adiestramiento canino</h2>
     <div class="training">  
-      <div class="training__text">
+      <div class="training__text" data-aos="flip-left">
         <p>
           Adiestrar es enseñar y convencer, sin presiones, entendiendo la forma de comportarse 
           de nuestro perro. En realidad, podríamos definir el adiestramiento canino como el conjunto 
@@ -157,7 +159,7 @@
           Solicitar turno
         </a>
       </div>
-      <div class="training__container">
+      <div class="training__container" data-aos="flip-right">
         <div class="training__vidresponsive">
           <iframe src="https://player.vimeo.com/video/562998885?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" 
           frameborder="0" allow="autoplay; fullscreen; picture-in-picture" loading="lazy" 
@@ -244,6 +246,12 @@
     </div>
   </footer>
   <!-- Fin Footer -->
+
+  <!-- Script AOS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   
   <!-- Script para boton de ir arriba -->
   <script defer src="https://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
