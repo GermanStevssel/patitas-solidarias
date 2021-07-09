@@ -951,14 +951,18 @@ footer .subfooter p {
   /* posición fija de la imagen de footer del home */
   opacity: 0.7;
   /* opacidad del 0,7 */
+  right: 0;
+  /* posicionado para centrar imagen */
   bottom: 0;
   /* posicionado a 0 del fondo */
+  left: 0;
+  /* posicionado para centrar imagen */
+  margin: auto;
+  /* imagen centrada */
   width: 40vw;
   /* ancho de la imagen de footer del home */
   height: auto;
   /* altura automatica manteniendo relación de asepcto*/
-  margin: 0 auto;
-  /* imagen centrada */
   /* ----- Tablet ----- */
   /* ----- Mobile ----- */
 }
