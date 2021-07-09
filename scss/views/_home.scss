@@ -5,7 +5,7 @@
 /* Centrar logo y nombre del sitio y darle tamaño*/
 .cont-home {
     display: flex; /* convertir el contenedor en flexbox */
-    justify-content: flex-start; /* centrar los elementos hijos */
+    justify-content: space-between; /* centrar los elementos hijos */
     flex-direction: column; /* acomodar en filas los elementos*/
     min-height: calc(100vh - 60px); /* altura del contenedor (60px altura Navbar) */
     width: 80vw; /* ancho del contenedor*/
@@ -16,7 +16,7 @@
     @media (max-width: 991px) {
         display: flex; /* convertir a flexbox */
         min-height: calc(100vh - 76px); /* altura del contenedor */
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column; /* arreglo en columna */
         align-items: center; /* alineación horizontal */
     }
@@ -53,6 +53,10 @@
 .logo-home {
     width: 20vw; /* ancho del logo del home */
 
+    @media (max-width: 991px) {
+        margin-top: 15vh;
+    }
+
     /* ----- Mobile ----- */
     @media (max-width: 576px) {
         width: 50vw;
@@ -67,7 +71,7 @@
     text-align: center;
     color: $white; /* color del texto */
     font-size: 5.5rem; /* tamaño de fuente */
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     
     /* ----- Tablet y Mobile ----- */
     @media (max-width: 991px) {
@@ -76,26 +80,32 @@
 }
 
 /* Posición de imagen de footer en inicio*/
-.ft-h {
-    position: absolute; /* posición fija de la imagen de footer del home */
-    opacity: 0.7; /* opacidad del 0,7 */
-    right: 0; /* posicionado para centrar imagen */
-    bottom: 0; /* posicionado a 0 del fondo */
-    left: 0; /* posicionado para centrar imagen */
-    margin: auto; /* imagen centrada */
-    width: 40vw; /* ancho de la imagen de footer del home */
-    height: auto; /* altura automatica manteniendo relación de asepcto*/
-    
-    /* ----- Tablet ----- */
-    @media (max-width: 991px) {
-        width: 50vw; /* ancho de imagen de footer de home */
-    }
+.absolute {
+    position: absolute;
+    bottom: 0;
 
-    /* ----- Mobile ----- */
-    @media (max-width: 576px) {
-        width: 90vw; /* ancho de la imagen de footer del home */
-    }
-} 
+    .ft-h {
+        position: relative; /* posición fija de la imagen de footer del home */
+        opacity: 0.7; /* opacidad del 0,7 */
+        right: 0; /* posicionado para centrar imagen */
+        bottom: 0; /* posicionado a 0 del fondo */
+        left: 0; /* posicionado para centrar imagen */
+        margin: auto; /* imagen centrada */
+        width: 40vw; /* ancho de la imagen de footer del home */
+        height: auto; /* altura automatica manteniendo relación de asepcto*/
+        
+        /* ----- Tablet ----- */
+        @media (max-width: 991px) {
+            width: 50vw; /* ancho de imagen de footer de home */
+        }
+    
+        /* ----- Mobile ----- */
+        @media (max-width: 576px) {
+            width: 90vw; /* ancho de la imagen de footer del home */
+        }
+    } 
+}
+
 
 .adh {
     background-image: url("../img/bg/adopt-home2.webp");
@@ -109,7 +119,7 @@
 
     @media (max-width: 991px) {
         background-image: url("../img/bg/adopt-home.webp");
-        height: 80vh;
+        height: 110vh;
     }
 
     .adh__center {
