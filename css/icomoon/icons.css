@@ -138,14 +138,14 @@
 }
 
 /* ----------------------- Tablet ----------------------- */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 576.1px) and (max-width: 960px) {
     .icon-paw-button:before {
       font-size: 2.2rem;
       padding: 0.2rem;
     }
 }
 /* ----------------------- Mobile ----------------------- */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 576px) {
   .icon-paw-button:before {
     display: none; /* quitar boton de subir en Mobile */
   }
