@@ -845,7 +845,7 @@ footer .subfooter p {
 .cont-home {
   display: flex;
   /* convertir el contenedor en flexbox */
-  justify-content: space-between;
+  justify-content: flex-start;
   /* centrar los elementos hijos */
   flex-direction: column;
   /* acomodar en filas los elementos*/
@@ -865,7 +865,7 @@ footer .subfooter p {
     /* convertir a flexbox */
     min-height: calc(100vh - 76px);
     /* altura del contenedor */
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
     /* arreglo en columna */
     align-items: center;
@@ -919,11 +919,6 @@ footer .subfooter p {
   /* ancho del logo del home */
   /* ----- Mobile ----- */
 }
-@media (max-width: 991px) {
-  .logo-home {
-    margin-top: 15vh;
-  }
-}
 @media (max-width: 576px) {
   .logo-home {
     width: 50vw;
@@ -940,7 +935,7 @@ footer .subfooter p {
   /* color del texto */
   font-size: 5.5rem;
   /* tamaño de fuente */
-  margin-bottom: 0;
+  margin-bottom: 2rem;
   /* ----- Tablet y Mobile ----- */
 }
 @media (max-width: 991px) {
@@ -951,38 +946,30 @@ footer .subfooter p {
 }
 
 /* Posición de imagen de footer en inicio*/
-.absolute {
+.ft-h {
   position: absolute;
-  bottom: 0;
-}
-.absolute .ft-h {
-  position: relative;
   /* posición fija de la imagen de footer del home */
   opacity: 0.7;
   /* opacidad del 0,7 */
-  right: 0;
-  /* posicionado para centrar imagen */
   bottom: 0;
   /* posicionado a 0 del fondo */
-  left: 0;
-  /* posicionado para centrar imagen */
-  margin: auto;
-  /* imagen centrada */
   width: 40vw;
   /* ancho de la imagen de footer del home */
   height: auto;
   /* altura automatica manteniendo relación de asepcto*/
+  margin: 0 auto;
+  /* imagen centrada */
   /* ----- Tablet ----- */
   /* ----- Mobile ----- */
 }
 @media (max-width: 991px) {
-  .absolute .ft-h {
+  .ft-h {
     width: 50vw;
     /* ancho de imagen de footer de home */
   }
 }
 @media (max-width: 576px) {
-  .absolute .ft-h {
+  .ft-h {
     width: 90vw;
     /* ancho de la imagen de footer del home */
   }
@@ -1001,7 +988,6 @@ footer .subfooter p {
 @media (max-width: 991px) {
   .adh {
     background-image: url("../img/bg/adopt-home.webp");
-    height: 110vh;
   }
 }
 .adh .adh__center {
